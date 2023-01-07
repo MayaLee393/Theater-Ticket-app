@@ -1,0 +1,75 @@
+body{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 240, 217);
+    font-size: 16px;
+}
+
+.container{
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    left: 30px;
+    width:90%;
+}
+
+.content{
+    padding: 10px;
+    position: relative;
+    left: 50px
+}
+
+.mainContainer{
+    position: relative;
+    left: 160px;
+    top: 60px;
+    width: 1070px;
+    border: 0px solid gray;
+    height:900px;
+}
+
+#checkoutContainer{
+    position: relative;
+    left: 160px;
+    top: 60px;
+    width: 1070px;
+    height:900px;
+}
+
+h1{
+
+    font-size: 60px;
+    font-weight: 600;
+    color:rgba(24, 132, 165, 0.979);
+}
+
+h2{
+    position: relative;
+    left: 25px;
+    font-size: 30px;
+    font-weight: 600;
+    color:rgb(207, 137, 24)
+}
+
+.pageButton{
+    position: absolute;
+    background-color: rgba(24, 132, 165, 0.979);
+    border-radius: 0px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    color: white;
+    font-size: 18px;
+    font-weight: 800;  
+    left: 800px; 
+    width:209px;
+}
+
+input{
+
+    font-size: 16px;
+}
+
+#scode{
+    width: 50px;
+}

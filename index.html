@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="TheathreCSS.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <p id="position">position</p>
+    <button class="pageButton" id="toCheckout" onclick="openCheckout()">CHECKOUT</button>
+    <div id="popup" class="popup">
+        <button class="exit" id="close-popup" onclick="exit(this.id)">X</button>
+        <div class="popuptext">
+            <p id="SectionText">SECTION</p>
+            <p id="SectionName">Main left forward</p>
+            <p id="RowText">ROW</p>
+            <p id="RowName">E</p>
+            <p id="SeatNum">SEAT</p>
+            <p id="SeatName">11</p>
+            <p id="cart"></p>
+
+            <div class = "bottompopup">
+            <p id="AvailableText">AVAILABLE TICKET TYPES:</p>
+            <p id="AFP">Adult/Full price</p>
+            <p id="TicketPrice">$75.00</p>
+            </div>
+
+        </div>
+        <button class="cart" id= cartButton onclick="addToCart()"><div class = "carttext1"><p id="ButtonAFP">ADULT/FULL PRICE</p></div>   <div class = "carttext2"><p id="ButtonTicketPrice">$75.00 ></p></div>  </button>
+    </div>
+
+    <button class = "ViewSeatsButton" id = "ViewSeats" onclick="toggleTable()"><div class = "posicon"><img src="shoppingbettergraypng.png" id = "shoppingimage" width="28px" height = "28px"></div> <div class = "ViewSeatText">VIEW<br>SEATS</div></button>
+
+    <p id = "totalprice" class = "tprice">$0.00</p>
+    <p id = "totalseatspicked" class = "tseats">0 Seats</p>
+
+
+    <div class = "maincontainer">
+        <button class="legendbutton" onclick="openLegend()">LEGEND</button>
+        <div class = "seatscontainer" id = "scontainer">
+            <div class = "seatmover" id = "smover">
+                <!--Left-->                             
+                <div class = "button1"><button class="b1 section4" id="D1" onclick="clicker(this.id)"> </button></div>
+                <div class = "button2"><button class="b2 section4" id="D2" onclick="clicker(this.id)"> </button></div>
+                <div class = "button3"><button class="b3 section4" id="D3" onclick="clicker(this.id)"> </button></div>
+                <div class = "button4"><button class="b4 section4" id="D4" onclick="clicker(this.id)"> </button></div>
+                <div class = "button5"><button class="b5 section4" id="C1" onclick="clicker(this.id)"> </button></div>
+                <div class = "button6"><button class="b6 section2" id="C2" onclick="clicker(this.id)"> </button></div>
+                <div class = "button7"><button class="b7 section2" id="C3" onclick="clicker(this.id)"> </button></div>
+                <div class = "button8"><button class="b8 section2" id="C4" onclick="clicker(this.id)"> </button></div>
+                <div class = "button9"><button class="b9 section2" id="C5" onclick="clicker(this.id)"> </button></div>
+                <div class = "button10"><button class="b10 section4" id="B1" onclick="clicker(this.id)"> </button></div>
+                <div class = "button11"><button class="b11 section2" id="B2" onclick="clicker(this.id)"> </button></div>
+                <div class = "button12"><button class="b12 section2" id="B3" onclick="clicker(this.id)"> </button></div>
+                <div class = "button13"><button class="b13 section2" id="B4" onclick="clicker(this.id)"> </button></div>
+                <div class = "button14"><button class="b14 section2" id="B5" onclick="clicker(this.id)"> </button></div>
+                <div class = "button15"><button class="b15 section2" id="B6"  onclick="clicker(this.id)"> </button></div>
+                <div class = "button16"><button class="b16 section4" id="A1" onclick="clicker(this.id)"> </button></div>
+                <div class = "button17"><button class="b17 section2" id="A2" onclick="clicker(this.id)"> </button></div>
+                <div class = "button18"><button class="b18 section2" id="A3" onclick="clicker(this.id)"> </button></div>
+                <div class = "button19"><button class="b19 section2" id="A4" onclick="clicker(this.id)"> </button></div>
+                <div class = "button20"><button class="b20 section1" id="A5" onclick="clicker(this.id)"> </button></div>
+                <div class = "button21"><button class="b21 section1" id="A6" onclick="clicker(this.id)"> </button></div>
+                <div class = "button22"><button class="b22 section1" id="A7" onclick="clicker(this.id)"> </button></div>
+                <!--Middle-->
+                <div class = "button23"><button class="b23 section3" id="D5" onclick="clicker(this.id)"></button></div>
+                <div class = "button24"><button class="b24 section3" id="D6" onclick="clicker(this.id)"></button></div>
+                <div class = "button25"><button class="b25 section3" id="D7" onclick="clicker(this.id)"></button></div>
+                <div class = "button26"><button class="b26 section3" id="D8" onclick="clicker(this.id)"></button></div>
+                <div class = "button27"><button class="b27 section3" id="D9" onclick="clicker(this.id)"></button></div>
+                <div class = "button28"><button class="b28 section3" id="D10" onclick="clicker(this.id)"></button></div>
+                <div class = "button29"><button class="b29 section3" id="D11" onclick="clicker(this.id)"></button></div>
+                <div class = "button30"><button class="b30 section3" id="D12" onclick="clicker(this.id)"></button></div>
+                <div class = "button31"><button class="b31 section3" id="D13" onclick="clicker(this.id)"></button></div>
+                <div class = "button32"><button class="b32 section3" id="D14" onclick="clicker(this.id)"></button></div>
+                <div class = "button33"><button class="b33 section3" id="D15" onclick="clicker(this.id)"></button></div>
+                <div class = "button34"><button class="b34 section3" id="D16" onclick="clicker(this.id)"></button></div>
+                <div class = "button35"><button class="b35 section3" id="D17" onclick="clicker(this.id)"></button></div>
+                <div class = "button36"><button class="b36 section3" id="D18" onclick="clicker(this.id)"></button></div>
+                <div class = "button37"><button class="b37 section3" id="D19" onclick="clicker(this.id)"></button></div>
+                <div class = "button38"><button class="b38 section2" id="C6" onclick="clicker(this.id)"></button></div>
+                <div class = "button39"><button class="b39 section2" id="C7" onclick="clicker(this.id)"></button></div>
+                <div class = "button40"><button class="b40 section2" id="C8" onclick="clicker(this.id)"></button></div>
+                <div class = "button41"><button class="b41 section2" id="C9" onclick="clicker(this.id)"></button></div>
+                <div class = "button42"><button class="b42 section2" id="C10" onclick="clicker(this.id)"></button></div>
+                <div class = "button43"><button class="b43 section2" id="C11" onclick="clicker(this.id)"></button></div>
+                <div class = "button44"><button class="b44 section2" id="C12" onclick="clicker(this.id)"></button></div>
+                <div class = "button45"><button class="b45 section2" id="C13" onclick="clicker(this.id)"></button></div>
+                <div class = "button46"><button class="b46 section2" id="C14" onclick="clicker(this.id)"></button></div>
+                <div class = "button47"><button class="b47 section2" id="C15" onclick="clicker(this.id)"></button></div>
+                <div class = "button48"><button class="b48 section2" id="C16" onclick="clicker(this.id)"></button></div>
+                <div class = "button49"><button class="b49 section2" id="C17" onclick="clicker(this.id)"></button></div>
+                <div class = "button50"><button class="b50 section2" id="C18" onclick="clicker(this.id)"></button></div>
+                <div class = "button51"><button class="b51 section2" id="B7" onclick="clicker(this.id)"></button></div>
+                <div class = "button52"><button class="b52 section2" id="B8" onclick="clicker(this.id)"></button></div>
+                <div class = "button53"><button class="b53 section2" id="B9" onclick="clicker(this.id)"></button></div>
+                <div class = "button54"><button class="b54 section2" id="B10" onclick="clicker(this.id)"></button></div>
+                <div class = "button55"><button class="b55 section2" id="B11" onclick="clicker(this.id)"></button></div>
+                <div class = "button56"><button class="b56 section2" id="B12" onclick="clicker(this.id)"></button></div>
+                <div class = "button57"><button class="b57 section2" id="B13" onclick="clicker(this.id)"></button></div>
+                <div class = "button58"><button class="b58 section2" id="B14" onclick="clicker(this.id)"></button></div>
+                <div class = "button59"><button class="b59 section2" id="B15" onclick="clicker(this.id)"></button></div>
+                <div class = "button60"><button class="b60 section2" id="B16" onclick="clicker(this.id)"></button></div>
+                <div class = "button61"><button class="b61 section2" id="B17" onclick="clicker(this.id)"></button></div>
+                <div class = "button62"><button class="b62 section1" id="A8" onclick="clicker(this.id)"></button></div>
+                <div class = "button63"><button class="b63 section1" id="A9" onclick="clicker(this.id)"></button></div>
+                <div class = "button64"><button class="b64 section1" id="A10" onclick="clicker(this.id)"></button></div>
+                <div class = "button65"><button class="b65 section1" id="A11" onclick="clicker(this.id)"></button></div>
+                <div class = "button66"><button class="b66 section1" id="A12" onclick="clicker(this.id)"></button></div>
+                <div class = "button67"><button class="b67 section1" id="A13" onclick="clicker(this.id)"></button></div>
+                <div class = "button68"><button class="b68 section1" id="A14" onclick="clicker(this.id)"></button></div>
+                <div class = "button69"><button class="b69 section1" id="A15" onclick="clicker(this.id)"></button></div>
+                <div class = "button70"><button class="b70 section1" id="A16" onclick="clicker(this.id)"></button></div>
+
+                <!--Right-->
+                <div class = "button71"><button class="b71 section1" id="A17" onclick="clicker(this.id)"> </button></div>
+                <div class = "button72"><button class="b72 section1" id="A18" onclick="clicker(this.id)"> </button></div>
+                <div class = "button73"><button class="b73 section1" id="A19" onclick="clicker(this.id)"> </button></div>
+                <div class = "button74"><button class="b74 section2" id="A20" onclick="clicker(this.id)"> </button></div>
+                <div class = "button75"><button class="b75 section2" id="A21" onclick="clicker(this.id)"> </button></div>
+                <div class = "button76"><button class="b76 section2" id="A22" onclick="clicker(this.id)"> </button></div>
+                <div class = "button77"><button class="b77 section4" id="A23" onclick="clicker(this.id)"> </button></div>
+                <div class = "button78"><button class="b78 section2" id="B18" onclick="clicker(this.id)"> </button></div>
+                <div class = "button79"><button class="b79 section2" id="B19" onclick="clicker(this.id)"> </button></div>
+                <div class = "button80"><button class="b80 section2" id="B20" onclick="clicker(this.id)"> </button></div>
+                <div class = "button81"><button class="b81 section2" id="B21" onclick="clicker(this.id)"> </button></div>
+                <div class = "button82"><button class="b82 section2" id="B22" onclick="clicker(this.id)"> </button></div>
+                <div class = "button83"><button class="b83 section4" id="B23" onclick="clicker(this.id)"> </button></div>
+                <div class = "button84"><button class="b84 section2" id="C19" onclick="clicker(this.id)"> </button></div>
+                <div class = "button85"><button class="b85 section2" id="C20" onclick="clicker(this.id)"> </button></div>
+                <div class = "button86"><button class="b86 section2" id="C21" onclick="clicker(this.id)"> </button></div>
+                <div class = "button87"><button class="b87 section2" id="C22" onclick="clicker(this.id)"> </button></div>
+                <div class = "button88"><button class="b88 section4" id="C23" onclick="clicker(this.id)"> </button></div>
+                <div class = "button89"><button class="b89 section4" id="D20" onclick="clicker(this.id)"> </button></div>
+                <div class = "button90"><button class="b90 section4" id="D21" onclick="clicker(this.id)"> </button></div>
+                <div class = "button91"><button class="b91 section4" id="D22" onclick="clicker(this.id)"> </button></div>
+                <div class = "button92"><button class="b92 section4" id="D23" onclick="clicker(this.id)"> </button></div>
+            
+                <div id="stage">
+                    <p>STAGE</p>
+                </div>
+            </div>
+    
+        </div>
+        
+        <div class="legend legendtop">
+            <button class="exit" id="close-legend" onclick="exit(this.id)">X</button>
+            <button id="open-legend" onclick="openLegend()">Legend</button>
+
+            <button class = "zoominbutton" onclick = "zooming(1)">+</button>
+            <button class = "zoomoutbutton" onclick = "zooming(0)">&#8722;</button>
+            <button class = "centerbutton" onclick = "zooming(2)">&#9679;</button>
+
+            <div class = "legendtoptext"><b>Legend</b></div></div>
+        
+        <div class = "legend legendbottom scroll">
+            <div class="prices">
+                <button class="premium" id="p1"> </button>
+                <div class = "premiumtext">Premium Seating</div>
+                <div class = "premiumprice">$99.00</div>
+
+                <button class="pricel2" id="p2"> </button>
+                <div class = "level2text">Price Level 2</div>
+                <div class = "level2price">$79.00</div>
+
+                <button class="pricel3" id="p3"> </button>
+                <div class = "level3text">Price Level 3</div>
+                <div class = "level3price">$59.00</div>
+
+                <button class="pricel4" id="p4"> </button>
+                <div class = "level4text">Price Level 4</div>
+                <div class = "level4price">$39.00</div>
+            </div>
+
+            <div class="key">
+                <hr class="keyline">
+                <button class="selectedIMG" id="selected"> </button>
+                <div class = "selectedtext">Selected seats</div>
+
+                <button class="unselectedIMG" id="unselected"> </button>
+                <div class = "unselectedtext">Unselected seats</div>
+
+                <button class="unavailableIMG" id="unavailable"> </button>
+                <div class = "unavailabletext">Unavailable seats</div>
+            </div>
+
+        </div>
+        </div>
+        
+
+        </div>
+    </div>
+
+    <div class = "ViewSeatsTable">
+    <p id = "handleTable"></p>
+    <!--
+    <table id = "actualt">
+    <tr id = "SectionNameTable" class = "RowMaker">
+    <td class = "sectable">Main Premium Forward</td>
+    <td class = "seattable">A - 14</td>
+    <td class = "typetable">Adult/Full price</td>
+    <td class = "pricetable">$79.00</td>
+    <td class = "removetable"><button id = "removebutton" class = "rbutton">Remove</button></td>
+    </tr>                                                    
+    </table> -->
+    <!--<p id = "ModifyTable" class = "ModifyTableMover"></p>-->
+    <div class = "ssText">Selected Seats</div>
+    <div class = "subtotaltext">Subtotal: </div>
+    <div class = "subtotalprice" id = "ss">$79.00</div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0-rc.1/jquery-ui.js"></script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src=ticket.js></script>
+</body>
+</html>

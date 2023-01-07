@@ -1,0 +1,1439 @@
+
+
+:root{
+    --section1: rgb(226, 166, 215);
+    --section2: rgb(205, 206, 134);
+    --section3: rgb(0, 255, 128);
+    --section4: rgb(169, 158, 226);
+}
+
+body{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 240, 217);
+}
+
+.legendtop{
+    position: absolute;
+    background-color: rgb(204, 204, 204);
+    left: 810px;
+    top: -1px;
+    width: 259px;
+    height: 80px;
+    border: 1px solid grey;
+    z-index: 12;
+}
+.legendtoptext{
+    position: absolute;
+    left: 18px;
+    top: 20px;
+    font-size: 30px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.legendbottom{
+    position: absolute;
+    background-color: rgb(243, 243, 243);
+    left: 810px;
+    top: 81px;
+    width: 258px;
+    height: 369px;
+    border-left: 1px solid grey;
+    border-bottom: 1px solid grey;
+    z-index: 12;
+}
+.premium{
+    position: absolute;
+    background-color: var(--section1);
+    padding: 11px;
+    left: 16px;
+    top: 20px;
+}
+
+.ViewSeatsButton{
+    position: absolute;
+    border-radius: 0px;
+    z-index: 1000;
+    background-color: rgb(235, 235, 235);
+    top: 512px;
+    left: 161px;
+    padding-top: 6px;
+    padding-bottom: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: default;
+    /*border: 1px solid black;*/
+}
+
+
+.ViewSeatText{
+    color: rgb(143, 143, 143);
+    font-size: 11px;
+}
+
+.tprice{
+    position: absolute;
+    top:495px;
+    left: 260px;
+    font-size:25px;
+    z-index: 1000;
+    font: arial;
+}
+
+.tseats{
+    position: absolute;
+    top:534px;
+    left: 260px;
+    font-size:18px;
+    z-index: 1000;
+    font: arial; 
+}
+
+.ViewSeatsTable{
+    position: absolute;
+    width: 1070px;
+    height: 110px;
+    background-color: rgb(255, 255, 255);
+    left: 160px;
+    top: 582px;
+    border: 1px solid grey;
+    visibility: hidden;
+    padding-bottom: 20px;
+    
+/*
+    display: flex;
+  flex-direction: column;
+  min-height: 60vh;*/
+}
+
+
+
+.ModifyTableMover{
+    position: absolute;
+}
+
+.RowMaker{
+    outline: thin solid gray;
+    height: 50px;
+}
+
+.sectable{
+    position: relative;
+    left: 12px;
+    top: 0px;
+    font-size: 17px;
+    font-family: Arial;
+    color: rgb(102, 102, 102);
+}   
+
+.seattable{
+    position: relative;
+    left: -75px;
+    top: 0px;
+    font-size: 17px;
+    font-family: Arial;
+    color: rgb(102, 102, 102); 
+}
+
+.typetable{
+    position: relative;
+    left: -5px;
+    top: 0px;
+    font-size: 17px;
+    font-family: Arial;
+    color: rgb(102, 102, 102); 
+}
+
+.pricetable{
+    position: relative;
+    left: 0px;
+    top: 0px;
+    font-size: 17px;
+    font-family: Arial;
+    color: rgb(102, 102, 102); 
+}
+
+.rbutton{
+    border-radius: 0px;
+    color: rgb(102, 102, 102);
+    font-size: 17px;
+    font-family: Arial;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border: 1px solid black;
+}
+
+.removetable{
+    position: relative;
+    left: 90px;
+    top: 0px;
+}
+
+#actualt{
+    position: absolute;
+    left: 15px;
+    top: 65px;
+    width: 1030px;
+}
+
+.ssText{
+    position: absolute;
+    color: black;
+    font-family: arial;
+    top: 24px;
+    left: 15px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.subtotaltext{
+    position: absolute;
+    color: black;
+    font-family: arial;
+    top: 125px;
+    left: 860px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.subtotalprice{
+    position: absolute;
+    color: black;
+    font-family: arial;
+    top: 125px;
+    left: 980px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.premiumtext{
+    position: absolute;
+    left: 50px;
+    top: 20px;
+    font-size: 18px;
+    font-family: Arial; 
+    font-weight: 550;
+}
+
+.premiumprice{
+    position: absolute;
+    left: 50px;
+    top: 48px;
+    font-size: 18px;
+      
+    font-family: Arial; 
+}
+
+.pricel2{
+    position: absolute;
+    background-color: var(--section2);
+    padding: 11px;
+    left: 16px;
+    top: 90px;
+}
+
+.level2text{
+    position: absolute;
+    left: 50px;
+    top: 90px;
+    font-size: 18px;
+    font-family: Arial;  
+    font-weight: 550;
+}
+
+.level2price{
+    position: absolute;
+    left: 50px;
+    top: 118px;
+    font-size: 18px;
+    font-family: Arial;
+}
+
+.pricel3{
+    position: absolute;
+    background-color: var(--section3);
+    padding: 11px;
+    left: 16px;
+    top: 160px;
+}
+
+.level3text{
+    position: absolute;
+    left: 50px;
+    top: 160px;
+    font-size: 18px;
+    font-family: Arial;  
+    font-weight: 550;
+}
+
+.level3price{
+    position: absolute;
+    left: 50px;
+    top: 188px;
+    font-size: 18px;
+    font-family: Arial;
+}
+
+.pricel4{
+    position: absolute;
+    background-color: var(--section4);
+    padding: 11px;
+    left: 16px;
+    top: 230px;
+}
+
+.level4text{
+    position: absolute;
+    left: 50px;
+    top: 230px;
+    font-size: 18px;
+    font-family: Arial;  
+    font-weight: 550;
+}
+
+.level4price{
+    position: absolute;
+    left: 50px;
+    top: 258px;
+    font-size: 18px;
+    font-family: Arial;
+}
+
+.selected{
+    background-color: lightgray;
+    background-image: url("circle.png");
+    background-repeat: no-repeat;
+    background-size: 10px 10px;
+    background-position: center;
+    border: 1px solid black;
+}
+
+.selectedIMG{
+    position: absolute;
+    background-color: lightgray;
+    background-image: url("circle.png");
+    background-repeat: no-repeat;
+    background-size: 10px 10px;
+    background-position: center;
+    border: 1px solid black;
+    padding: 11px;
+    left: 16px;
+    top: 330px;
+}
+
+.selectedtext{
+    position: absolute;
+    left: 50px;
+    top: 330px;
+    font-size: 18px;
+    font-family: Arial;  
+}
+
+.unselectedIMG{
+    position: absolute;
+    background-color: lightgray;
+    padding: 11px;
+    left: 16px;
+    top: 372px;
+}
+
+.unselectedtext{
+    position: absolute;
+    left: 50px;
+    top: 372px;
+    font-size: 18px;
+    font-family: Arial;  
+}
+
+.unavailableIMG{
+    position: absolute;
+    background-color: gray;
+    padding: 11px;
+    left: 16px;
+    top: 414px;
+}
+
+.unavailabletext{
+    position: absolute;
+    left: 50px;
+    top: 414px;
+    font-size: 18px;
+    font-family: Arial;  
+}
+
+.prices{
+    height:290px;
+}
+
+.key{
+    height:180px;
+}
+
+.keyline{
+    width:170px;
+}
+
+div.scroll{
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.maincontainer{
+    background-color: rgb(235, 235, 235);
+    position: absolute;
+    left: 160px;
+    top: 60px;
+    width: 1070px;
+    height: 520px;
+    border-bottom: 1px solid gray;   
+    border-right: 1px solid gray;
+    border-top: 1px solid gray;
+    border-left: 1px solid gray;
+    overflow-x: hidden;
+}
+
+.seatscontainer{
+    background-color: white;
+    position: absolute;
+    padding-left: 18px;
+    left: 0px;
+    top: 0px;
+    width: 1051px;
+    height: 450px;    
+    border-bottom: 1px solid grey; /*to make line which seperates seats and bottom cart section*/
+    overflow-y: hidden;
+    overflow-x: hidden;
+    cursor: all-scroll;
+}
+
+.seatmover{
+    position: absolute;
+    transform: scale(0.92);
+    left: -10px;   
+    top: 75px;
+
+    transition: 0.5s;
+}
+
+.transitionzoom{
+    transition: 0.5s;
+}
+
+
+.blur{
+    filter:blur(2px);
+}
+
+.legendbutton{
+    position: absolute;
+    background-color: rgba(24, 132, 165, 0.979);
+    border-radius: 4px;
+    padding-left: 27px;
+    padding-right: 27px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    top:22px;
+    left: 930px;
+    z-index: 10;  
+    color: white;
+    font-size: 14px;
+    font-weight: 600; 
+}
+
+.zoominbutton{
+    position: absolute;
+    background-color: rgba(24, 132, 165, 0.979);
+    border-radius: 0px;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 3px;
+    padding-bottom: 4px;
+    color: white;
+    font-size: 22px;
+    font-weight: 800; 
+    top: 332px;
+    left: -60px;
+    z-index: 1000;
+}
+
+.zoomoutbutton{
+    position: absolute;
+    background-color: rgba(24, 132, 165, 0.979);
+    border-radius: 0px;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 3px;
+    padding-bottom: 4px;
+    color: white;
+    font-size: 22px;
+    font-weight: 800; 
+    top: 372px;
+    left: -60px;
+    z-index: 1000;
+}
+
+.centerbutton{
+    position: absolute;
+    background-color: rgba(24, 132, 165, 0.979);
+    border-radius: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 1px;
+    padding-bottom: 4px;
+    color: white;
+    font-size: 22px;
+    font-weight: 800; 
+    top: 285px;
+    left: -60px;
+    z-index: 1000;  
+}
+
+
+.zoominbutton:active, .zoomoutbutton:active, .centerbutton:active, .open-legend:active, .cart:active{
+    background-color: rgba(24, 132, 165, 0.979);
+    transform: translateY(4px);
+}
+
+#popup{
+    background-color: rgb(219, 219, 219);
+    position: absolute;
+    z-index: 100;
+    width:350px;
+    height:185px;
+    left: 450px;
+    top: 10px;
+    visibility: hidden;
+    padding: 0px;
+    box-shadow: 0 0 20px 1px black;
+}
+
+.clicked-popup{
+    background-color: rgb(219, 219, 219);
+    position: absolute;
+    z-index: 100;
+    width:350px;
+    height:385px;
+    left: 450px;
+    /*visibility: hidden;*/
+    padding: 0px;
+    box-shadow: 0 0 20px 1px black;
+}
+
+.bottompopup{
+    position: absolute;
+    top: 75px;
+    width:100%;
+    height:110px;
+    background-color: rgb(255, 255, 255);
+    
+}
+
+#SectionText{
+    position: absolute;
+    top: 0px;
+    left: 15px;
+    color: rgb(143, 143, 143);
+    font-size: 15px;
+    font-weight: 50;
+}
+
+#SectionName{
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    color: solid black;
+    font-size: 19px;
+    font-weight: 50;
+}
+
+#RowText{
+    position: absolute;
+    top: 0px;
+    left: 240px;
+    color: rgb(143, 143, 143);
+    font-size: 15px;
+    font-weight: 50;
+}
+
+#RowName{
+    position: absolute;
+    top: 20px;
+    left: 240px;
+    color: solid black;
+    font-size: 19px;
+    font-weight: 50;
+}
+
+#SeatNum{
+    position: absolute;
+    top: 0px;
+    left: 290px;
+    color: rgb(143, 143, 143);
+    font-size: 15px;
+    font-weight: 50;
+}
+
+#SeatName{
+    position: absolute;
+    top: 20px;
+    left: 290px;
+    color: solid black;
+    font-size: 19px;
+    font-weight: 50;
+}
+
+#AvailableText{
+    position: absolute;
+    top: 0px;
+    left: 15px;
+    color: rgb(207, 137, 24);
+    font-family: 'Roboto Mono', monospace;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+#AFP{
+    position: absolute;
+    top: 50px;
+    left: 15px;
+    color: solid black;
+    font-size: 17px;
+    font-weight: 50; 
+}
+
+#TicketPrice{
+    position: absolute;
+    top: 50px;
+    left: 285px;
+    color: solid black;
+    font-size: 17px; 
+    font-weight: 50;  
+}
+
+.exit{
+    width:20px;
+    height: 20px;
+    border-radius: 0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#close-legend{
+    position:absolute;
+    top: 5px;
+    right: 5px;
+}
+
+#close-popup{
+    position:absolute;
+    top: 2px;
+    right: 2px;
+    background-color:rgb(219, 219, 219);
+}
+#open-legend{
+    background-color: rgba(24, 132, 165, 0.979);
+    border-radius: 10px;
+    visibility: hidden;
+    position: absolute;
+    top:10px;
+    left: 75px;
+}
+
+.cart{
+    width:340px;
+    height: 50px;
+    border-radius: 0;
+    padding:0;
+    background-color: rgba(24, 132, 165, 0.979);
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    right: 10px;
+    top: 135px;
+    visibility: auto;
+
+    color: white;
+    font-size: 15px;
+    font-weight: 600; 
+}
+
+#ButtonAFP{
+    position: absolute;
+    left: 20px;
+    top: 0px;
+    color: white;
+    font-size: 15px;
+    font-weight: 600; 
+    z-index: 100000;
+}
+
+#ButtonTicketPrice{
+    position: absolute;
+    left: 255px;
+    top: 0px;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;  
+}
+
+
+.pageButton{
+    position: absolute;
+    background-color: rgba(24, 132, 165, 0.979);
+    border-radius: 0px;
+    padding-left: 21px;
+    padding-right: 21px;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    color: white;
+    font-size: 22px;
+    font-weight: 800; 
+    left: 1022px;   
+    top: 512px; 
+    z-index: 1000;  
+    width:209px;
+}
+
+#stage{
+    position: absolute;
+    top: 230px;
+    left: 395px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(165, 81, 42);
+    font-size: 20px;
+}
+
+/*
+#toCheckout{
+    position: absolute;
+    z-index: 70;
+    left: 1150px;   
+    top: 525px; 
+}*/
+
+button{
+    padding: 12px;
+    border-radius: 50%;
+    border: 0px;
+    cursor: pointer;
+    background-image: none;
+}
+
+.zoom{
+    transform: scale(1.2,1);
+    top:45px;
+}
+
+.slideOut{
+    transform: translateX(259px);
+    transition: 0.5s;
+    
+}
+
+.slideIn{
+    transform: translateX(-0px);
+    transition: 0.5s;
+    
+}
+
+/*-----------------------------------All the seats-----------------------------------------------------*/
+.b1{
+    position: absolute;
+    top: 70px;
+    left: 25px;
+    background-color: rgb(255, 81, 0);
+   
+}
+
+.b2{
+    position: absolute;
+    top: 70px;
+    left: 55px;
+    background-color: rgb(255, 81, 0);
+
+}
+
+.b3{
+    position: absolute;
+    top: 70px;
+    left: 85px;
+    background-color: rgb(255, 81, 0);
+
+}
+
+.b4{
+    position: absolute;
+    top: 70px;
+    left: 115px;
+    background-color: rgb(255, 81, 0);
+
+}
+
+.b5{
+    position: absolute;
+    top: 110px;
+    left: 25px;
+    background-color: rgb(255, 81, 0);
+
+}
+
+.b6{
+    position: absolute;
+    top: 110px;
+    left: 55px;
+    background-color: rgb(255, 81, 0);
+
+}
+
+.b7{
+    position: absolute;
+    top: 110px;
+    left: 85px;
+    background-color: rgb(255, 81, 0);
+
+}
+
+.b8{
+    position: absolute;
+    top: 110px;
+    left: 115px;
+    background-color: rgb(255, 81, 0);
+
+}
+
+.b9{
+    position: absolute;
+    top: 110px;
+    left: 145px;
+    background-color: rgb(255, 81, 0);
+
+}
+
+.b10{
+    position: absolute;
+    top: 150px;
+    left: 25px;
+    background-color: rgb(255, 81, 0);
+
+}
+
+.b11{
+    position: absolute;
+    top: 150px;
+    left: 55px;
+    background-color: rgb(255, 81, 0);
+
+}
+
+.b12{
+    position: absolute;
+    top: 150px;
+    left: 85px;
+    background-color: rgb(255, 81, 0);
+
+}
+
+.b13{
+    position: absolute;
+    top: 150px;
+    left: 115px;
+    background-color: rgb(255, 81, 0);
+
+}
+
+.b14{
+    position: absolute;
+    top: 150px;
+    left: 145px;
+    background-color: rgb(255, 81, 0);
+
+}
+
+.b15{
+    position: absolute;
+    top: 150px;
+    left: 175px;
+    background-color: rgb(255, 81, 0);
+
+}
+
+.b16{
+    position: absolute;
+    top: 190px;
+    left: 25px;
+    background-color: rgb(255, 81, 0);
+
+}
+
+.b17{
+    position: absolute;
+    top: 190px;
+    left: 55px;
+    background-color: rgb(255, 81, 0);
+
+}
+
+.b18{
+    position: absolute;
+    top: 190px;
+    left: 85px;
+    background-color: rgb(255, 81, 0);
+
+}
+
+.b19{
+    position: absolute;
+    top: 190px;
+    left: 115px;
+    background-color: rgb(255, 81, 0);
+
+}
+
+.b20{
+    position: absolute;
+    top: 190px;
+    left: 145px;
+    background-color: rgb(255, 81, 0);
+
+}
+
+.b21{
+    position: absolute;
+    top: 190px;
+    left: 175px;
+    background-color: rgb(255, 81, 0);
+
+}
+
+.b22{
+    position: absolute;
+    top: 190px;
+    left: 205px;
+    background-color: rgb(255, 81, 0);
+
+}
+
+.b23{
+    position: absolute;
+    top: 70px;
+    left: 205px;
+    background-color: rgb(255, 81, 0);
+
+}
+
+.b24{
+    position: absolute;
+    top: 70px;
+    left: 235px;
+    background-color: rgb(255, 81, 0);
+
+}
+
+.b25{
+    position: absolute;
+    top: 70px;
+    left: 265px;
+    background-color: rgb(255, 81, 0);
+
+}
+
+.b26{
+    position: absolute;
+    top: 70px;
+    left: 295px;
+    background-color: rgb(255, 81, 0);
+
+}
+
+.b27{
+    position: absolute;
+    top: 70px;
+    left: 325px;
+    background-color: rgb(255, 81, 0);
+
+}
+
+.b28{
+    position: absolute;
+    top: 70px;
+    left: 355px;
+    background-color: rgb(255, 81, 0);
+
+}
+
+.b29{
+    position: absolute;
+    top: 70px;
+    left: 385px;
+    background-color: rgb(255, 81, 0);
+
+}
+
+.b30{
+    position: absolute;
+    top: 70px;
+    left: 415px;
+    background-color: rgb(255, 81, 0);
+
+}
+
+.b31{
+    position: absolute;
+    top: 70px;
+    left: 445px;
+    background-color: rgb(255, 81, 0);
+
+}
+.b32{
+    position: absolute;
+    top: 70px;
+    left: 475px;
+    background-color: rgb(255, 81, 0);
+
+}
+.b33{
+    position: absolute;
+    top: 70px;
+    left: 505px;
+    background-color: rgb(255, 81, 0);
+
+}
+.b34{
+    position: absolute;
+    top: 70px;
+    left: 535px;
+    background-color: rgb(255, 81, 0);
+
+}
+.b35{
+    position: absolute;
+    top: 70px;
+    left: 565px;
+    background-color: rgb(255, 81, 0);
+
+}
+.b36{
+    position: absolute;
+    top: 70px;
+    left: 595px;
+    background-color: rgb(255, 81, 0);
+
+}
+.b37{
+    position: absolute;
+    top: 70px;
+    left: 625px;
+    background-color: rgb(255, 81, 0);
+
+}
+
+.b38{
+    position: absolute;
+    top: 110px;
+    left: 235px;
+    background-color: rgb(255, 81, 0);
+}
+
+.b39{
+    position: absolute;
+    top: 110px;
+    left: 265px;
+    background-color: rgb(255, 81, 0);
+}
+
+.b40{
+    position: absolute;
+    top: 110px;
+    left: 295px;
+    background-color: rgb(255, 81, 0);
+}
+.b41{
+    position: absolute;
+    top: 110px;
+    left: 325px;
+    background-color: rgb(255, 81, 0);
+}
+.b42{
+    position: absolute;
+    top: 110px;
+    left: 355px;
+    background-color: rgb(255, 81, 0);
+}
+.b43{
+    position: absolute;
+    top: 110px;
+    left: 385px;
+    background-color: rgb(255, 81, 0);
+}
+.b44{
+    position: absolute;
+    top: 110px;
+    left: 415px;
+    background-color: rgb(255, 81, 0);
+}
+.b45{
+    position: absolute;
+    top: 110px;
+    left: 445px;
+    background-color: rgb(255, 81, 0);
+}
+.b46{
+    position: absolute;
+    top: 110px;
+    left: 475px;
+    background-color: rgb(255, 81, 0);
+}
+.b47{
+    position: absolute;
+    top: 110px;
+    left: 505px;
+    background-color: rgb(255, 81, 0);
+}
+.b48{
+    position: absolute;
+    top: 110px;
+    left: 535px;
+    background-color: rgb(255, 81, 0);
+}
+.b49{
+    position: absolute;
+    top: 110px;
+    left: 565px;
+    background-color: rgb(255, 81, 0);
+}
+.b50{
+    position: absolute;
+    top: 110px;
+    left: 595px;
+    background-color: rgb(255, 81, 0);
+}
+
+
+
+.b51{
+    position: absolute;
+    top: 150px;
+    left: 265px;
+    background-color: rgb(255, 81, 0);
+}
+
+.b52{
+    position: absolute;
+    top: 150px;
+    left: 295px;
+    background-color: rgb(255, 81, 0);
+}
+
+.b53{
+    position: absolute;
+    top: 150px;
+    left: 325px;
+    background-color: rgb(255, 81, 0);
+}
+
+.b54{
+    position: absolute;
+    top: 150px;
+    left: 355px;
+    background-color: rgb(255, 81, 0);
+}
+
+.b55{
+    position: absolute;
+    top: 150px;
+    left: 385px;
+    background-color: rgb(255, 81, 0);
+}
+
+.b56{
+    position: absolute;
+    top: 150px;
+    left: 415px;
+    background-color: rgb(255, 81, 0);
+}
+
+.b57{
+    position: absolute;
+    top: 150px;
+    left: 445px;
+    background-color: rgb(255, 81, 0);
+}
+
+.b58{
+    position: absolute;
+    top: 150px;
+    left: 475px;
+    background-color: rgb(255, 81, 0);
+}
+
+.b59{
+    position: absolute;
+    top: 150px;
+    left: 505px;
+    background-color: rgb(255, 81, 0);
+}
+
+.b60{
+    position: absolute;
+    top: 150px;
+    left: 535px;
+    background-color: rgb(255, 81, 0);
+}
+.b61{
+    position: absolute;
+    top: 150px;
+    left: 565px;
+    background-color: rgb(255, 81, 0);
+}
+
+
+.b62{
+    position: absolute;
+    top: 190px;
+    left: 295px;
+    background-color: rgb(255, 81, 0);
+}
+
+.b63{
+    position: absolute;
+    top: 190px;
+    left: 325px;
+    background-color: rgb(255, 81, 0);
+}
+
+.b64{
+    position: absolute;
+    top: 190px;
+    left: 355px;
+    background-color: rgb(255, 81, 0);
+}
+
+.b65{
+    position: absolute;
+    top: 190px;
+    left: 385px;
+    background-color: rgb(255, 81, 0);
+}
+
+.b66{
+    position: absolute;
+    top: 190px;
+    left: 415px;
+    background-color: rgb(255, 81, 0);
+}
+
+.b67{
+    position: absolute;
+    top: 190px;
+    left: 445px;
+    background-color: rgb(255, 81, 0);
+}
+
+.b68{
+    position: absolute;
+    top: 190px;
+    left: 475px;
+    background-color: rgb(255, 81, 0);
+}
+
+.b69{
+    position: absolute;
+    top: 190px;
+    left: 505px;
+    background-color: rgb(255, 81, 0);
+}
+
+.b70{
+    position: absolute;
+    top: 190px;
+    left: 535px;
+    background-color: rgb(255, 81, 0);
+}
+
+
+
+
+.b71{
+    position: absolute;
+    top: 190px;
+    left: 625px;
+    background-color: rgb(255, 81, 0);
+}
+
+.b72{
+    position: absolute;
+    top: 190px;
+    left: 655px;
+    background-color: rgb(255, 81, 0);
+}
+
+.b73{
+    position: absolute;
+    top: 190px;
+    left: 685px;
+    background-color: rgb(255, 81, 0);
+}
+
+.b74{
+    position: absolute;
+    top: 190px;
+    left: 715px;
+    background-color: rgb(255, 81, 0);
+}
+
+.b75{
+    position: absolute;
+    top: 190px;
+    left: 745px;
+    background-color: rgb(255, 81, 0);
+}
+
+.b76{
+    position: absolute;
+    top: 190px;
+    left: 775px;
+    background-color: rgb(255, 81, 0);
+}
+
+.b77{
+    position: absolute;
+    top: 190px;
+    left: 805px;
+    background-color: rgb(255, 81, 0);
+}
+
+
+
+.b78{
+    position: absolute;
+    top: 150px;
+    left: 655px;
+    background-color: rgb(255, 81, 0);
+}
+
+.b79{
+    position: absolute;
+    top: 150px;
+    left: 685px;
+    background-color: rgb(255, 81, 0);
+}
+
+.b80{
+    position: absolute;
+    top: 150px;
+    left: 715px;
+    background-color: rgb(255, 81, 0);
+}
+
+.b81{
+    position: absolute;
+    top: 150px;
+    left: 745px;
+    background-color: rgb(255, 81, 0);
+}
+
+.b82{
+    position: absolute;
+    top: 150px;
+    left: 775px;
+    background-color: rgb(255, 81, 0);
+}
+
+.b83{
+    position: absolute;
+    top: 150px;
+    left: 805px;
+    background-color: rgb(255, 81, 0);
+}
+
+
+
+
+.b84{
+    position: absolute;
+    top: 110px;
+    left: 685px;
+    background-color: rgb(255, 81, 0);
+}
+
+.b85{
+    position: absolute;
+    top: 110px;
+    left: 715px;
+    background-color: rgb(255, 81, 0);
+}
+
+.b86{
+    position: absolute;
+    top: 110px;
+    left: 745px;
+    background-color: rgb(255, 81, 0);
+}
+
+.b87{
+    position: absolute;
+    top: 110px;
+    left: 775px;
+    background-color: rgb(255, 81, 0);
+}
+
+.b88{
+    position: absolute;
+    top: 110px;
+    left: 805px;
+    background-color: rgb(255, 81, 0);
+}
+
+
+
+.b89{
+    position: absolute;
+    top: 70px;
+    left: 715px;
+    background-color: rgb(255, 81, 0);
+}
+
+.b90{
+    position: absolute;
+    top: 70px;
+    left: 745px;
+    background-color: rgb(255, 81, 0);
+}
+
+.b91{
+    position: absolute;
+    top: 70px;
+    left: 775px;
+    background-color: rgb(255, 81, 0);
+}
+
+.b92{
+    position: absolute;
+    top: 70px;
+    left: 805px;
+    background-color: rgb(255, 81, 0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.section4{
+    background-color: var(--section4);
+}
+.section3{
+    background-color: var(--section3);
+}
+.section2{
+    background-color: var(--section2);
+}
+.section1{
+    background-color: var(--section1);
+}
